@@ -106,8 +106,20 @@ function show(shown, hidden) {
     <a href="#" onclick="return show('Page2','Page1');"> Go to the newest album : <em> Pray For The Wicked </em> </a>
   </div>
 
-  <div id="Page2" style="display:none">
-<h2 style="color:white;">The Newest Album</h2>
+  <div id="Page2" style="display:none"></h1>
+<form name="login">
+Username<input type="text" name="user"/>
+Password<input type="password" name="password"/>
+<input type="button" onclick="check  <br> (this.form" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "user" && form.pswrd.value == "password")
+  {
+    window.open('<h2 style="color:white;">The Newest Album</h2>
   <title>Pray For The Wicked</title>
   <h3 style="color:white;" id="patd">Pray For The Wicked</h3>
   <p style="color:grey;"> <em> Pray For The Wicked</em> was released in 2018 and it is the second album of Panic At The Disco to hit <strong>No.1 on The Billboard 200 chart</strong> </p>
@@ -135,7 +147,16 @@ function show(shown, hidden) {
   </ol>
     <a href="#" onclick="return show('Page1','Page2');">Go to Home </a>
   </div>
-
+')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+    
+</div>
 </body>
 </html>
 
