@@ -22,7 +22,17 @@ Project Website
   #teal{style=color:rgb(0,128,128);
     text-align:center;}
 </style>
-<div background-color:black;>
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+
+  <div id="Page1" background-color:black;>
   <img src="https://images-na.ssl-images-amazon.com/images/I/816OJ373GnL._SX425_.jpg" alt="Logo of Panic At the Disco"  width="128" height="128"> 
   <h1 id="patd" style="color:white;"> Panic! At The Disco</h1>
   <p style="color:teal;"> <strong>  Panic! At the Disco </strong>is an alternative pop-rock band that was
@@ -92,7 +102,12 @@ Project Website
    
     </tbody>
         </table>
-  <h2 style="color:white;">The Newest Album</h2>
+  
+    <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+  </div>
+
+  <div id="Page2" style="display:none">
+<h2 style="color:white;">The Newest Album</h2>
   <title>Pray For The Wicked</title>
   <h3 style="color:white;" id="patd">Pray For The Wicked</h3>
   <p style="color:grey;"> <em> Pray For The Wicked</em> was released in 2018 and it is the second album of Panic At The Disco to hit <strong>No.1 on The Billboard 200 chart</strong> </p>
@@ -118,5 +133,12 @@ Project Website
     </li>
     <li>Dying in LA 3:</li>
   </ol>
+    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
   </div>
+
+</body>
 </html>
+
+  
+
+
