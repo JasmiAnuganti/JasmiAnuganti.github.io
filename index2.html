@@ -52,4 +52,24 @@ Project Website
     </li>
     <li>Dying in LA 3:</li>
   </ol>
+  
+<p>Select your favorite browser:</p>
+<form action="/action_page.php">
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="A Fever You Can't Sweat Out">A Fever You Can't Sweat Out<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Pretty Odd">Pretty Odd<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Vices & Virtues">Vices & Virtues<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Too Weird To Live, Too Rare To Die">Too Weird To Live, Too Rare to Die<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Death of a Bachelor">Death of a Bachelor<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Pray for the Wicked">Pray for the Wicked<br><br>
+
+  Your favorite browser is: <input type="text" id="result">
+  <input type="submit" value="Submit form">
+</form>
+
+<script>
+function myFunction(browser) {
+    document.getElementById("result").value = browser;
+}
+</script>
   </div>
+  
